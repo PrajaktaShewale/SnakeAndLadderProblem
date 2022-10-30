@@ -2,12 +2,14 @@
 
 namespace SnakeAndLadder
 {
-    internal class GamePlay
+    public class GamePlay
     {
-        public void Game()
+        
+        Random random = new Random();
+        public void DieRoll()
         {
-          int PlayerPosition = 0;
-            Console.WriteLine("Game is Start.Player is at starting position:"+PlayerPosition);
+          int die = random.Next(1,7);
+            Console.WriteLine(die);
         }
     }
 }

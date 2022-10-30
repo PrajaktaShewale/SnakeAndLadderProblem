@@ -7,7 +7,7 @@ namespace SnakeAndLadder
         static void Main(string[] args)
         {
             GamePlay sn = new GamePlay();
-            sn.Game();
+            sn.DieRoll();
         }
     }
 }
