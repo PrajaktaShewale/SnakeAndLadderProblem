@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace SnakeAndLadder
 {
     internal class GamePlay
@@ -11,13 +6,13 @@ namespace SnakeAndLadder
         int position = 0, count = 0;
         Random random = new Random();
         //UC3
-        public void DieRoll()
+        public int DieRoll()
         {
             while (position < 100)
             {
                 int num = random.Next(1, 7);
-                int check = random.Next(0, 3);
-                switch (check)
+                int num1 = random.Next(0, 3);
+                switch (num1)
                 {
                     case 0:
                         Console.WriteLine("Player is in the same position");
@@ -64,6 +59,7 @@ namespace SnakeAndLadder
                 }
             }
             Console.WriteLine("total number of DICE roll to win a game is " + count);
+            return count;
         }
     }
 }
